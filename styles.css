@@ -1,0 +1,138 @@
+.body {
+  height: 100vh;
+  margin: 0;
+
+  background-color: black;
+  color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+    Navbar styling
+*/
+
+.navbar {
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: rgb(20, 20, 20);
+
+  height: 70px;
+}
+
+.material-icons.icon {
+  color: white;
+  font-size: 27px;
+  font-weight: 0;
+}
+
+/*
+    Navbar left section
+*/
+
+.left-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.youtube-logo {
+  width: 120px;
+  height: 65px;
+}
+
+.logo-country-code {
+  margin-top: -20px;
+  margin-left: -25px;
+
+  font-size: 8pt;
+  font-weight: 0;
+}
+
+/*
+    Navbar middle section
+*/
+
+.middle-navbar {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+  padding-bottom: 18px;
+}
+
+.custom-searchbar {
+  width: 572px;
+  height: 32px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar {
+  flex: 1;
+
+  font-size: 12pt;
+  padding-left: 10px;
+  background-color: rgb(48, 45, 45);
+  border: 0;
+  color: aliceblue;
+}
+
+input::placeholder {
+  color: rgb(121, 116, 116);
+}
+
+.searchicon-container {
+  background-color: rgb(78, 78, 78);
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchicon {
+  font-size: 27px;
+  font-weight: 100;
+}
+
+#micicon {
+  background-color: rgb(46, 46, 46);
+
+  padding: 3px;
+  border-radius: 50%;
+}
+
+/*
+    Navbar right section
+*/
+
+.right-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+
+.container {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
