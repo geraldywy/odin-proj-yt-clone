@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>clone-youtube</title>
 </head>
 <body class="body">
@@ -29,14 +32,54 @@
         </div>
 
         <div class="right-navbar">
-            <i class="material-icons icon" id="createicon">video_call</i>
-            <i class="material-icons icon" id="appsicon">apps</i>
-            <i class="material-icons icon" id="notificon">notifications_none</i>
-            <i class="material-icons icon" id="notificon">account_circle</i>
+            <i class="material-icons icon" id="create-icon">video_call</i>
+            <i class="material-icons icon" id="apps-icon">apps</i>
+            <i class="material-icons icon" id="notif-icon">notifications_none</i>
+            <i class="material-icons icon" id="account-icon">account_circle</i>
         </div>
     </div>
     <div class="container">
-        Content here
+        <div class="left-container">
+            <iframe class="video" onload="resizeIframe(this)" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1" ></iframe>
+            <div class="primary-info">
+                <div class="super-title">
+                    <a class="link-tags" spellcheck="false" href="https://www.youtube.com/hashtag/%EC%B9%B4%EB%AA%A8">#카모</a>
+                    <a class="link-tags" spellcheck="false" href="https://www.youtube.com/hashtag/camo">#CAMO</a>
+                    <a class="link-tags" spellcheck="false" href="https://www.youtube.com/hashtag/%ED%9E%99%ED%95%A9">#힙합</a>
+                </div>
+                <h1 class="title">
+                    🎧카모(CAMO) 딩고 진출 기념 카모(CAMO) 발매 & 참여 플레이리스트 [PLAYLIST]
+                </h1>
+                <div class="primary-metadata">
+                    <div class="left-primary-metadata">
+                        <span>494,443 views</span> <span class="separator">&bull;</span> <span>Mar 23, 2021</span>
+                    </div>
+                    <div class="right-primary-metadata">
+                        <div class="right-primary-metadata-tab">
+                            <i class="material-icons icon" id="like-icon">thumb_up_off_alt</i><span>6.2K</span>
+                        </div>
+                        <div class="right-primary-metadata-tab">
+                            <i class="material-icons icon" id="dislike-icon">thumb_down_off_alt</i><span>DISLIKE</span>
+                        </div>
+                        <div class="right-primary-metadata-tab">
+                            <i class="material-icons icon" id="share-icon">reply</i><span>SHARE</span>
+                        </div>
+                        <div class="right-primary-metadata-tab">
+                            <i class="material-icons icon" id="save-icon">playlist_add</i><span>SAVE</span>
+                        </div>
+                        <i class="material-icons icon" id="more-icon">more_horiz</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondary-info">
+                Sec info
+            </div>
+        </div>
+
+        <div class="right-container">
+            right
+        </div>
     </div>
 </body>
 </html>

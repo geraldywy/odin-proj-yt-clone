@@ -2,11 +2,13 @@
   height: 100vh;
   margin: 0;
 
-  background-color: black;
+  background-color: rgb(24, 23, 23);
   color: aliceblue;
 
   display: flex;
   flex-direction: column;
+
+  font-family: Roboto, Arial, sans-serif;
 }
 
 /*
@@ -17,18 +19,18 @@
   display: flex;
 
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
-  padding-left: 40px;
+  padding-left: 25px;
   padding-right: 40px;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(36, 35, 35);
 
-  height: 70px;
+  height: 56px;
 }
 
 .material-icons.icon {
   color: white;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 0;
 }
 
@@ -69,7 +71,6 @@
   align-items: center;
 
   gap: 15px;
-  padding-bottom: 18px;
 }
 
 .custom-searchbar {
@@ -91,7 +92,7 @@
 }
 
 input::placeholder {
-  color: rgb(121, 116, 116);
+  color: #aaaaaa;
 }
 
 .searchicon-container {
@@ -125,14 +126,123 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding-bottom: 15px;
+  gap: 25px;
 }
 
 .container {
   flex: 1;
 
+  margin: 0px 8vw;
+
   display: flex;
   justify-content: center;
+}
+
+.left-container {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 24px;
+  gap: 20px;
+}
+
+.right-container {
+  min-width: 20vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 24px 24px 0px 0px;
+}
+
+/*
+    video content
+*/
+
+.video-container {
+  display: flex;
+}
+
+.video {
+  width: 1280px;
+  height: 720px;
+  max-width: 65vw;
+  max-height: 55vh;
+
+  border: 0;
+}
+
+/*
+    primary info
+*/
+
+.primary-info {
+  width: 100%;
+
+  border-bottom: 1px solid rgb(66, 66, 66);
+}
+
+.link-tags {
+  color: #3ea6ff;
+  font-size: 12px;
+  text-decoration: none;
+
+  margin-right: 1px;
+}
+
+.title {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-metadata {
+  height: 40px;
+  width: 100%;
+
+  font-size: 14px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.separator {
+  margin: 0px 4px;
+}
+
+#share-icon {
+  transform: rotateY(180deg); /* reverse icon */
+}
+
+.left-primary-metadata,
+.right-primary-metadata {
+  display: flex;
+  align-items: center;
+}
+
+.left-primary-metadata {
+  color: #aaaaaa;
+}
+
+.right-primary-metadata {
+  width: 28%;
+
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 15px;
+}
+
+.right-primary-metadata-tab {
+  flex: 1;
+
+  display: flex;
+  gap: 5px;
   align-items: center;
 }
