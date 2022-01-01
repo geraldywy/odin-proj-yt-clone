@@ -129,10 +129,14 @@ input::placeholder {
   gap: 25px;
 }
 
+/*
+    General content layout
+*/
+
 .container {
   flex: 1;
 
-  margin: 0px 15vw;
+  margin: 0px 10vw;
 
   display: flex;
   justify-content: center;
