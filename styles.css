@@ -515,6 +515,8 @@ a {
 
 .watch-next {
   display: flex;
+
+  margin-bottom: 12px;
 }
 
 .watch-next-thumbnail {
