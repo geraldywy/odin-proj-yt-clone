@@ -16,6 +16,11 @@
 */
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   display: flex;
 
   justify-content: center;
@@ -148,13 +153,13 @@ input::placeholder {
 
 @media screen and (min-width: 2100px) {
   .container {
-    margin: 0px 15vw;
+    margin: 56px 15vw;
   }
 }
 
 @media screen and (max-width: 2100px) {
   .container {
-    margin: 0px 1vw;
+    margin: 56px 1vw;
   }
 }
 
